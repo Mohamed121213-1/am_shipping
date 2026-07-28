@@ -33,7 +33,7 @@ const SUPABASE_URL = "https://mnovqngjipmqniipwnif.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ub3ZxbmdqaXBtcW5paXB3bmlmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODUxODExODksImV4cCI6MjEwMDc1NzE4OX0.LZXvJlJ5XeAIpfLKBp74_Vxq9heBWCgHs4QcnbpO2wE";
 const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
   auth: {
-    persistSession: true,
+    persistSession: false,
     autoRefreshToken: false,
     detectSessionInUrl: false,
   },
